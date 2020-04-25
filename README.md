@@ -13,23 +13,29 @@ The STAR schema consists of one or more FACT tables referencing any number of DI
 This logic includes:
 
 •	What song should play next for the Sparkify user, based on past behavior.
+
 •	Which song an user would be interested in listening to at that particular point of time.
 
 Sparkify would use the STAR schema like this:
 
 •	FACT Table: songplays: attributes referencing to the dimension tables.
+
 •	DIMENSION Tables: users, songs, artists and time table.
 
 The above databases will help the analytics team at Sparkify to run different kinds of analysis to recommend a Sparkify user.
 
 •	Favorite songs of user based on the week day: By joining songplay and songs and user table based on level.
+
 •	Recent listened to songs: By joining songplays and user table can show recommendation on the app based on subscription level.
+
 •	Help in recommending most popular songs of the day/week.
 
 ETL Pipeline
 
 •	Create FACT table from the dimensison tables and log_data called songplays.
+
 •	Create DIMENSION songs and artist table from extracting songs_data by selected columns.
+
 •	Create DIMENSION users and time tables from extracting log_data by selected columns.
 
 Usage
