@@ -1,6 +1,6 @@
 # Data-Engineering
 
-Introduction
+Introduction - Music Streaming App Data Analysis 
 
 
 A startup company that provides music streaming, called Sparkify, is looking to analyst user data. The songs details and the user activity data from the application are currently available and stored in the format of JSON.
